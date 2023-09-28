@@ -1,6 +1,7 @@
 import express from "express";
 import initWebRoutes from "./routes/routes";
 import configViewEngine from "./config/viewEngine";
+
 require("dotenv").config();
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -12,5 +13,5 @@ configViewEngine(app);
 initWebRoutes(app);
 
 app.listen(PORT, () => {
-  console.log("Backen is running on " + PORT);
+  console.log("Backen is running on PORT " + PORT);
 });
