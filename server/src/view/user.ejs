@@ -17,7 +17,7 @@
   </head>
   <body>
     <h1 class="mt-4 mb-5" style="text-align: center; color: lightseagreen">
-      LIST ALL USER OVER THERE
+      MEMBER WAS PROMOTED
     </h1>
     <div class="container">
       <table
@@ -28,7 +28,8 @@
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Email</th>
-            <th scope="col">User Name</th>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -38,14 +39,16 @@
             <th scope="row"><%=index+1%></th>
             <td><%=item.email%></td>
             <td><%=item.username%></td>
+            <td>Master</td>
+
             <td>
-              <button type="button" class="btn btn-primary">Edit</button>
+              <button type="button" class="btn btn-primary">Follow</button>
               <form
                 action="/delete/user/<%=item.id%>"
                 method="POST"
                 style="display: inline"
               >
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-success">About</button>
               </form>
             </td>
           </tr>

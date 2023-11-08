@@ -1,0 +1,22 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  overflow: hidden;
+  a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  a:hover {
+    background-color: #ddd;
+    color: rgb(231, 12, 12);
+  }
+  a.active {
+    background-color: #0446aa;
+    color: white;
+  }
+}
